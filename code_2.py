@@ -14,7 +14,7 @@ image = iio.imread('assets/scenery.jpg')
 pixels = image.reshape((-1, 3))
 
 # Menentukan jumlah kluster (K)
-K = 4  # Bisa diubah sesuai kebutuhan
+K = 4
 kmeans = KMeans(n_clusters=K, random_state=42, n_init=10)
 kmeans.fit(pixels)
 
